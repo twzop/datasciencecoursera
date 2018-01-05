@@ -3,7 +3,7 @@
 ##==============================  
 
 ##  Establish working directory
-setwd("C:/Users/soloc/OneDrive/Documents/PROJECTS/onlinertraining/RforStatistics/Week3/practice")
+setwd("C:/Users/soloc/OneDrive/Documents/PROJECTS/datasciencecoursera/RProgramming/wk3/practice")
 
 ## Pull in assignment from web and unzip in-place
 dataset_url <- "http://s3.amazonaws.com/practice_assignment/diet_data.zip"
