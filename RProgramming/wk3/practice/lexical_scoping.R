@@ -12,5 +12,5 @@ make.power <- function (n) {
 }
 
 # Run tests
-cube <- make.power(3)
-square <- make.power(2)
+cube <- make.power(3) # 3^3 == 27
+square <- make.power(2) # 3^2 == 9
