@@ -27,3 +27,17 @@ apply(x, 2, mean)
 # Similarily, we can show sums of each row and not cols
 apply(x, 1, sum)
 
+
+# If we happen to have a matrix with 200 random normal variables
+# , 20 rows with 10 columns and I want to know the 25th and the 
+# 75th percentile of each row of x using the quantile function, 
+# I'd do the following:
+apply(x, 1, quantile, probs = c(0.25, 0.75))
+
+# Average of matrix in an array
+a <- array(rnorm(2 * 2 * 10), c(2, 2, 10))
+print(a)
+apply(a, c(1, 2), mean) # keep 1st and 2nd dimensions, but collapse 3rd
+
+rowMeans(a, dims = 2)
+
