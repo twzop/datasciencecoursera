@@ -22,3 +22,6 @@ x <- c(rnorm(10), runif(10), rnorm(10, 1))
 f <- gl(3, 10)
 print(f)
 tapply(x, f, mean)
+
+# Calculate to get the min and max of a range of numbers
+tapply(x, f, range)
